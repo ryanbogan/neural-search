@@ -336,6 +336,8 @@ integTest {
     if (System.getProperty("test.debug") != null) {
         jvmArgs '-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005'
     }
+
+    jvmArgs '-Xms4g, -Xmx4g'
 }
 
 testClusters.integTest {
